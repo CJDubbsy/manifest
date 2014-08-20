@@ -1,0 +1,40 @@
+------------Team-OctOS------------
+-------------Octo-Kat-------------
+----------Android--4.4.4----------
+REAL AOSP + OctSettings = OctOS
+
+~~~~~!!!!!TEACHING TIME!!!!!~~~~~
+Pull up a chair and prepare to learn.
+
+Setup Your Environment in Ubuntu/Linux:
+--------------------------------------
+    http://forum.xda-developers.com/showthread.php?t=2368833
+You can alternatively install everything manually.  Click below for more information:
+    http://lmgtfy.com/?q=setup+android+environment
+
+Downloading the Source(about 30-40GB of files):
+----------------------------------------------
+    * Make your project directory =>     "mkdir ~/oct"
+    * Navigate or change directory to your project directory =>    "cd ~/oct"
+    * Initialize the project =>   "repo init -u git://github.com/CJDubbsy/manifest -b kk-4.4"
+    * Sync the aosp files to your machine =>    "repo sync"
+    * Create the device tree manifest  => "jet/repo.sh samsung nexus"
+    * Sync the device files => "repo sync"
+    
+Building the Device:
+--------------------
+    * Choose the supported device and type => "jet/SUPPORTED_DEVICE.sh n (CORES+1)"
+      -> for jflte and a quad core device you would type "jet/jflte.sh n 5" don't forget the n and number.  it defaults to n but it defaults to 21 threads/cores
+
+Build will take roughly 3-6 hours depending on machine.
+
+Thanks for playing!
+
+ __________                 ___           __________     __________ 
+/   ____   \               |   |         /   ____   \   /   _______\
+|   |  |   |            ___|   |___      |   |  |   |   |  /
+|   |  |   |    _____  |           |     |   |  |   |   |  \_______
+|   |  |   |   /  ___\ |___     ___|     |   |  |   |    \______   \
+|   |  |   |  |  |         |   |         |   |  |   |           \  |
+|   ----   |  |  |____     |   |         |   ----   |     ______/  |
+\__________/   \_____/     |___|         \__________/    /_________/     Established in 2013 by a group of hooligans, wild chimps, and baby unicorns
